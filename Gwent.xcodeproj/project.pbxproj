@@ -8,10 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		5E79CC511C8555EE00423188 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC501C8555EE00423188 /* main.cpp */; };
+		5E79CC5E1C855A3000423188 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC5D1C855A3000423188 /* main.cpp */; };
+		5E79CC631C85716600423188 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E79CC621C85716600423188 /* gtest.framework */; };
+		5E79CC6F1C873F4000423188 /* CUnitCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC6E1C873F4000423188 /* CUnitCard.cpp */; };
+		5E79CC731C87CAFC00423188 /* CUnitCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC6E1C873F4000423188 /* CUnitCard.cpp */; };
+		5E79CC751C87CC9400423188 /* CSpecialCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC741C87CC9400423188 /* CSpecialCard.cpp */; };
+		5E79CC761C87CC9400423188 /* CSpecialCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC741C87CC9400423188 /* CSpecialCard.cpp */; };
+		5E79CC791C87CD2200423188 /* CWeatherCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC781C87CD2200423188 /* CWeatherCard.cpp */; };
+		5E79CC7A1C87CD2200423188 /* CWeatherCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC781C87CD2200423188 /* CWeatherCard.cpp */; };
+		5E79CC7D1C87CE8500423188 /* CHeroCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC7C1C87CE8500423188 /* CHeroCard.cpp */; };
+		5E79CC7E1C87CE8500423188 /* CHeroCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC7C1C87CE8500423188 /* CHeroCard.cpp */; };
+		5E79CC811C886FD600423188 /* CBattleField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC801C886FD600423188 /* CBattleField.cpp */; };
+		5E79CC821C886FD600423188 /* CBattleField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC801C886FD600423188 /* CBattleField.cpp */; };
+		5E79CC841C88771600423188 /* TestBattleField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC831C88771600423188 /* TestBattleField.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5E79CC4B1C8555EE00423188 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		5E79CC591C855A3000423188 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,6 +47,22 @@
 /* Begin PBXFileReference section */
 		5E79CC4D1C8555EE00423188 /* Gwent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gwent; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E79CC501C8555EE00423188 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5E79CC5B1C855A3000423188 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E79CC5D1C855A3000423188 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5E79CC621C85716600423188 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = gtest.framework; sourceTree = "<group>"; };
+		5E79CC6D1C873C5600423188 /* ICard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICard.h; sourceTree = "<group>"; };
+		5E79CC6E1C873F4000423188 /* CUnitCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CUnitCard.cpp; sourceTree = "<group>"; };
+		5E79CC711C873F7500423188 /* CUnitCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUnitCard.h; sourceTree = "<group>"; };
+		5E79CC721C87C88500423188 /* CSpecialCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSpecialCard.h; sourceTree = "<group>"; };
+		5E79CC741C87CC9400423188 /* CSpecialCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CSpecialCard.cpp; sourceTree = "<group>"; };
+		5E79CC771C87CD0B00423188 /* CWeatherCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CWeatherCard.h; sourceTree = "<group>"; };
+		5E79CC781C87CD2200423188 /* CWeatherCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CWeatherCard.cpp; sourceTree = "<group>"; };
+		5E79CC7B1C87CE7300423188 /* CHeroCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHeroCard.h; sourceTree = "<group>"; };
+		5E79CC7C1C87CE8500423188 /* CHeroCard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CHeroCard.cpp; sourceTree = "<group>"; };
+		5E79CC7F1C886FAE00423188 /* CBattleField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBattleField.h; sourceTree = "<group>"; };
+		5E79CC801C886FD600423188 /* CBattleField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CBattleField.cpp; sourceTree = "<group>"; };
+		5E79CC831C88771600423188 /* TestBattleField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestBattleField.cpp; sourceTree = "<group>"; };
+		5E79CC851C88772500423188 /* TestBattleField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBattleField.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,13 +73,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5E79CC581C855A3000423188 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E79CC631C85716600423188 /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5E79CC441C8555EE00423188 = {
 			isa = PBXGroup;
 			children = (
+				5E79CC621C85716600423188 /* gtest.framework */,
 				5E79CC4F1C8555EE00423188 /* Gwent */,
+				5E79CC5C1C855A3000423188 /* Test */,
 				5E79CC4E1C8555EE00423188 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				5E79CC4D1C8555EE00423188 /* Gwent */,
+				5E79CC5B1C855A3000423188 /* Test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +107,29 @@
 			isa = PBXGroup;
 			children = (
 				5E79CC501C8555EE00423188 /* main.cpp */,
+				5E79CC6D1C873C5600423188 /* ICard.h */,
+				5E79CC6E1C873F4000423188 /* CUnitCard.cpp */,
+				5E79CC711C873F7500423188 /* CUnitCard.h */,
+				5E79CC721C87C88500423188 /* CSpecialCard.h */,
+				5E79CC741C87CC9400423188 /* CSpecialCard.cpp */,
+				5E79CC771C87CD0B00423188 /* CWeatherCard.h */,
+				5E79CC781C87CD2200423188 /* CWeatherCard.cpp */,
+				5E79CC7B1C87CE7300423188 /* CHeroCard.h */,
+				5E79CC7C1C87CE8500423188 /* CHeroCard.cpp */,
+				5E79CC7F1C886FAE00423188 /* CBattleField.h */,
+				5E79CC801C886FD600423188 /* CBattleField.cpp */,
 			);
 			path = Gwent;
+			sourceTree = "<group>";
+		};
+		5E79CC5C1C855A3000423188 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				5E79CC5D1C855A3000423188 /* main.cpp */,
+				5E79CC831C88771600423188 /* TestBattleField.cpp */,
+				5E79CC851C88772500423188 /* TestBattleField.h */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +152,23 @@
 			productReference = 5E79CC4D1C8555EE00423188 /* Gwent */;
 			productType = "com.apple.product-type.tool";
 		};
+		5E79CC5A1C855A3000423188 /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E79CC5F1C855A3000423188 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				5E79CC571C855A3000423188 /* Sources */,
+				5E79CC581C855A3000423188 /* Frameworks */,
+				5E79CC591C855A3000423188 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test;
+			productName = Test;
+			productReference = 5E79CC5B1C855A3000423188 /* Test */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +179,9 @@
 				ORGANIZATIONNAME = Magygt;
 				TargetAttributes = {
 					5E79CC4C1C8555EE00423188 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					5E79CC5A1C855A3000423188 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -109,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				5E79CC4C1C8555EE00423188 /* Gwent */,
+				5E79CC5A1C855A3000423188 /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -118,7 +209,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E79CC7D1C87CE8500423188 /* CHeroCard.cpp in Sources */,
+				5E79CC751C87CC9400423188 /* CSpecialCard.cpp in Sources */,
+				5E79CC811C886FD600423188 /* CBattleField.cpp in Sources */,
 				5E79CC511C8555EE00423188 /* main.cpp in Sources */,
+				5E79CC791C87CD2200423188 /* CWeatherCard.cpp in Sources */,
+				5E79CC6F1C873F4000423188 /* CUnitCard.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E79CC571C855A3000423188 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E79CC7E1C87CE8500423188 /* CHeroCard.cpp in Sources */,
+				5E79CC761C87CC9400423188 /* CSpecialCard.cpp in Sources */,
+				5E79CC821C886FD600423188 /* CBattleField.cpp in Sources */,
+				5E79CC5E1C855A3000423188 /* main.cpp in Sources */,
+				5E79CC7A1C87CD2200423188 /* CWeatherCard.cpp in Sources */,
+				5E79CC841C88771600423188 /* TestBattleField.cpp in Sources */,
+				5E79CC731C87CAFC00423188 /* CUnitCard.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +328,28 @@
 			};
 			name = Release;
 		};
+		5E79CC601C855A3000423188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E79CC611C855A3000423188 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -237,6 +369,16 @@
 				5E79CC561C8555EE00423188 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E79CC5F1C855A3000423188 /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E79CC601C855A3000423188 /* Debug */,
+				5E79CC611C855A3000423188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
