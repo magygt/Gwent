@@ -1,0 +1,792 @@
+Redanian Foot Soldier
+1
+null
+northern
+0
+
+Poor Fucking Infantry
+1
+tight_bond
+northern
+0
+
+Yarpen Zigrin
+2
+null
+northern
+0
+
+Blue Stripes Commando
+4
+tight_bond
+northern
+0
+
+Sigismund Dijkstra
+4
+spy
+northern
+0
+
+Prince Stennis
+5
+spy
+northern
+0
+
+Siegfried of Denesle
+5
+null
+northern
+0
+
+Ves
+5
+null
+northern
+0
+
+Vernon Roche
+10
+hero
+northern
+0
+
+John Natalis
+10
+hero
+northern
+0
+
+Sheldon Skaggs
+4
+null
+northern
+1
+
+Sabrina Glevissig
+4
+null
+northern
+1
+
+Crinfrid Reaver's Dragon Hunter
+5
+tight_bond
+northern
+1
+
+Síle de Tansarville
+5
+null
+northern
+1
+
+Keira Metz
+5
+null
+northern
+1
+
+Dethmold
+6
+null
+northern
+1
+
+Kaedweni Siege Expert
+1
+morale_boost
+northern
+2
+
+Dun Banner Medic
+5
+medic
+northern
+2
+
+Ballista
+6
+null
+northern
+2
+
+Trebuchet
+6
+null
+northern
+2
+
+Thaler
+1
+spy
+northern
+2
+
+Foltest: King of Temeria
+-1
+foltest_leader1
+northern
+3
+
+Foltest: Lord Commander
+-1
+foltest_leader2
+northern
+3
+
+Foltest: The Siegemaster
+-1
+foltest_leader3
+northern
+3
+
+Foltest: The Steel-Forged
+-1
+foltest_leader4
+northern
+3
+
+Philippa Eilhart
+10
+hero
+northern
+1
+
+Esterad Thyssen
+10
+hero
+northern
+0
+
+Siege Tower
+6
+null
+northern
+2
+
+Catapult
+8
+tight_bond
+northern
+2
+
+Decoy
+-1
+decoy
+neutral
+4
+
+Scorch
+-1
+scorch_card
+neutral
+4
+
+Commander's Horn
+-1
+commanders_horn_card
+neutral
+4
+
+Impenetrable Fog
+-1
+weather_fog
+neutral
+5
+
+Biting Frost
+-1
+weather_frost
+neutral
+5
+
+Torrential Rain
+-1
+weather_rain
+neutral
+5
+
+Clear Weather
+-1
+weather_clear
+neutral
+5
+
+Dandelion
+2
+commanders_horn
+neutral
+0
+
+Avallac'h
+0
+hero,spy
+neutral
+0
+
+Villentretenmerth 
+7
+scorch
+neutral
+0
+
+Francesca, Pureblood Elf
+-1
+francesca_leader1
+scoiatael
+3
+
+Francesca The Beautiful
+-1
+francesca_leader2
+scoiatael
+3
+
+Francesca, Daisy of The Valley
+-1
+francesca_leader3
+scoiatael
+3
+
+Francesca, Queen of Dol Blathanna
+-1
+francesca_leader4
+scoiatael
+3
+
+Saesenthessis
+10
+hero
+scoiatael
+1
+
+Iorveth
+10
+hero
+scoiatael
+1
+
+Isengrim Faoiltiarnah
+10
+hero,morale_boost
+scoiatael
+0
+
+Eithne
+10
+hero
+scoiatael
+1
+
+Havekar Healer
+0
+medic
+scoiatael
+1
+
+Riordain
+1
+null
+scoiatael
+1
+
+Toruviel
+2
+null
+scoiatael
+1
+
+Elven Skirmisher
+2
+muster
+scoiatael
+1
+
+Dwarven Skirmisher
+3
+muster
+scoiatael
+0
+
+Ciaran aep Easnillien
+3
+agile
+scoiatael
+1
+
+Vrihedd Brigade Recruit
+4
+null
+scoiatael
+1
+
+Dol Blathanna Archer
+4
+null
+scoiatael
+1
+
+Havekar Smuggler
+5
+muster
+scoiatael
+0
+
+Mahakaman Defender
+5
+null
+scoiatael
+0
+
+Vrihedd Brigade Veteran
+5
+agile
+scoiatael
+0
+
+Dennis Cranmer
+6
+null
+scoiatael
+0
+
+Filavandrel aén Fidháil
+6
+agile
+scoiatael
+1
+
+Ida Emean aep Sivney
+6
+null
+scoiatael
+1
+
+Yaevinn
+6
+agile
+scoiatael
+0
+
+Barclay Els
+6
+agile
+scoiatael
+0
+
+Dol Blathanna Scout
+6
+agile
+scoiatael
+0
+
+Milva
+10
+morale_boost
+scoiatael
+1
+
+Eredin, Commander of the Red Riders
+-1
+eredin_leader1
+monster
+3
+
+Eredin, Bringer of Death
+-1
+eredin_leader2
+monster
+3
+
+Eredin, Destroyer of Worlds
+-1
+eredin_leader3
+monster
+3
+
+Eredin, King of The Wild Hunt
+-1
+eredin_leader4
+monster
+3
+
+Kayran
+8
+hero,morale_boost,agile
+monster
+1
+
+Leshen
+10
+hero
+monster
+1
+
+Imlerith
+10
+hero
+monster
+0
+
+Draug
+10
+hero
+monster
+0
+
+Ghoul
+1
+muster
+monster
+0
+
+Nekker
+2
+muster
+monster
+0
+
+Wyvern
+2
+null
+monster
+1
+
+Foglet
+2
+null
+monster
+0
+
+Celaeno Harpy
+2
+agile
+monster
+1
+
+Gargoyle
+2
+null
+monster
+1
+
+Cockatrice
+2
+null
+monster
+1
+
+Harpy
+2
+agile
+monster
+1
+
+Endrega
+2
+null
+monster
+1
+
+Vampire: Bruxa
+4
+muster
+monster
+0
+
+Vampire: Fleder
+4
+muster
+monster
+0
+
+Vampire: Garkain
+4
+muster
+monster
+0
+
+Vampire: Ekimmara
+4
+muster
+monster
+0
+
+Arachas
+4
+muster
+monster
+0
+
+Botchling
+4
+null
+monster
+0
+
+Forktail
+5
+null
+monster
+0
+
+Plague Maiden
+5
+null
+monster
+0
+
+Griffin
+5
+null
+monster
+0
+
+Werewolf
+5
+null
+monster
+0
+
+Frightener
+5
+null
+monster
+0
+
+Ice Giant
+5
+null
+monster
+2
+
+Grave Hag
+5
+null
+monster
+1
+
+Crone: Whispess
+6
+muster
+monster
+0
+
+Crone: Brewess
+6
+muster
+monster
+0
+
+Crone: Weavess
+6
+muster
+monster
+0
+
+Arachas Behemoth
+6
+muster
+monster
+2
+
+Fire Elemental
+6
+null
+monster
+2
+
+Fiend
+6
+null
+monster
+0
+
+Earth Elemental
+6
+null
+monster
+2
+
+Emhyr vas Emreis the Relentless
+-1
+emreis_leader4
+nilfgaardian
+3
+
+test
+10
+hero
+nilfgaardian
+1
+
+Letho of Gulet
+10
+hero
+nilfgaardian
+0
+
+Morvran Voorhis
+10
+hero
+nilfgaardian
+2
+
+Menno Coehoorn
+10
+hero,medic
+nilfgaardian
+0
+
+Siege Technician
+0
+medic
+nilfgaardian
+2
+
+Etolian Auxiliary Archers
+1
+medic
+nilfgaardian
+1
+
+Albrich
+2
+null
+nilfgaardian
+1
+
+Sweers
+2
+null
+nilfgaardian
+2
+
+Nausicaa Cavalry Rider
+2
+tight_bond
+nilfgaardian
+0
+
+Vreemde
+2
+null
+nilfgaardian
+0
+
+Rotten Mangonel
+3
+null
+nilfgaardian
+2
+
+Morteisen
+3
+null
+nilfgaardian
+0
+
+Puttkammer
+3
+null
+nilfgaardian
+1
+
+Impera Brigade Guard
+3
+tight_bond
+nilfgaardian
+0
+
+Vanhemar
+4
+null
+nilfgaardian
+1
+
+Vattier de Rideaux
+4
+spy
+nilfgaardian
+0
+
+Rainfarn
+4
+null
+nilfgaardian
+0
+
+Cynthia
+4
+null
+nilfgaardian
+1
+
+Zerrikanian Fire Scorpion
+5
+null
+nilfgaardian
+2
+
+Young Emissary
+5
+tight_bond
+nilfgaardian
+0
+
+Renuald aep Matsen
+5
+null
+nilfgaardian
+1
+
+Siege Engineer
+6
+null
+nilfgaardian
+2
+
+Cahir Mawr Dyffryn aep Ceallach
+6
+null
+nilfgaardian
+0
+
+Fringilla Vigo
+6
+null
+nilfgaardian
+1
+
+Assire var Anahid
+6
+null
+nilfgaardian
+1
+
+Shilard Fitz-Oesterlen
+7
+spy
+nilfgaardian
+0
+
+Stefan Skellen
+9
+spy
+nilfgaardian
+0
+
+Heavy Zerrikanian Fire Scorpion
+10
+null
+nilfgaardian
+2
+
+Black Infantry Archer
+10
+null
+nilfgaardian
+1
+
