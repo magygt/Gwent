@@ -22,6 +22,8 @@ enum Tier
 //have thought of using mask
 enum Ability
 {
+    NOBODY,
+    //normal unit with no ability.
     AGILE,
     //can be placed in either close combat or ranged rows.
     MEDIC,
@@ -46,7 +48,7 @@ class CUnitCard :
 public:
     CUnitCard();
     ~CUnitCard();
-    void OnBoard();
+    void ToString();
     
 private:
     Tier m_Tier;

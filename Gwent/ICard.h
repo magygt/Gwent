@@ -21,15 +21,24 @@ enum Faction
     SCOIATAEL
 };
 
+enum CardGenre
+{
+    UNIT,
+    SPECIAL
+};
+
 class ICard
 {
 public:
     virtual ~ICard(){}
-    virtual void OnBoard() = 0;
+    virtual void ToString() = 0;
 
 private:
-    Faction m_Faction;
     std::string m_Title;
+    Faction m_Faction;
+    CardGenre m_Genre;
 };
+
+typedef std::vector<ICard*> Deck;
 
 #endif /* ICard_h */

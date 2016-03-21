@@ -9,6 +9,8 @@
 #include "CSpecialCard.h"
 
 CSpecialCard::CSpecialCard()
+            :m_Usage(USELESS),
+             m_Weather(EMPTY)
 {
     
 }
@@ -18,7 +20,7 @@ CSpecialCard::~CSpecialCard()
     
 }
 
-void CSpecialCard::OnBoard()
+void CSpecialCard::ToString()
 {
     
 }

@@ -18,7 +18,7 @@ CUnitCard::~CUnitCard()
     
 }
 
-void CUnitCard::OnBoard()
+void CUnitCard::ToString()
 {
     
 }
