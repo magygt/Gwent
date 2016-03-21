@@ -9,5 +9,7 @@
 #ifndef TestPlayer_h
 #define TestPlayer_h
 
+#define TEST_FRIENDS \
+friend class CTestPlayer;
 
 #endif /* TestPlayer_h */

@@ -6,4 +6,15 @@
 //  Copyright © 2016 Magygt. All rights reserved.
 //
 
-#include <stdio.h>
+#include "CPlayer.h"
+
+CPlayer::CPlayer()
+{
+    m_Battlefield = new CBattleField();
+}
+
+CPlayer::~CPlayer()
+{
+    delete m_Battlefield;
+    m_Battlefield = NULL;
+}
