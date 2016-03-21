@@ -12,8 +12,6 @@
 #include "ICard.h"
 #include "CUnitCard.h"
 #include "CSpecialCard.h"
-#include "CWeatherCard.h"
-#include "CHeroCard.h"
 
 #ifndef TEST_FRIENDS
 #define TEST_FRIENDS
