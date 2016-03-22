@@ -10,6 +10,7 @@
 #define CUnitCard_h
 
 #include "ICard.h"
+#include <map>
 
 enum Tier
 {
@@ -42,19 +43,28 @@ enum Ability
     HERO
 };
 
+
+
 class CUnitCard :
     public ICard
 {
 public:
     CUnitCard();
+    CUnitCard(std::vector<std::string> &vecCardRaw);
     ~CUnitCard();
     void ToString();
+    
+    static std::map<std::string, Faction> mapFaction;
+    static std::vector<Tier> vecTier;
+    
+private:
+    static std::map<std::string, Faction> CreateFactionMap();
+    static std::vector<Tier> CreateTierVec();
     
 private:
     Tier m_Tier;
     int m_Strength;
-    std::vector<Ability> m_Abilities;
-    
+    std::vector<Ability> m_Abilities;    
 };
 
 #endif /* CUnitCard_h */
