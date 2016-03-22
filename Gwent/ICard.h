@@ -11,6 +11,7 @@
 
 #include <string>
 #include <vector>
+#include <map>
 
 enum Faction
 {
@@ -31,9 +32,9 @@ class ICard
 {
 public:
     virtual ~ICard(){}
-    virtual void ToString() = 0;
+    virtual std::string ToString() = 0;
+    
 
-private:
     std::string m_Title;
     Faction m_Faction;
     CardGenre m_Genre;
