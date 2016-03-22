@@ -38,8 +38,17 @@ class CSpecialCard :
 {
 public:
     CSpecialCard();
+    CSpecialCard(std::vector<std::string> &vecCardRaw);
     ~CSpecialCard();
-    void ToString();
+    
+    std::string ToString();
+    
+    static std::map<std::string, Usage> mapUsage;
+    static std::map<std::string, Weather> mapWeather;
+    
+private:
+    static std::map<std::string, Usage> InitMapUsage();
+    static std::map<std::string, Weather> InitMapWeather();
     
 private:
     Usage m_Usage;
