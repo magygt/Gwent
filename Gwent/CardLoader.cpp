@@ -29,9 +29,10 @@ Deck CardLoader(std::string strFilename)
     //std::cout << strGwentRaw << std::endl;
     unsigned long nLength = strGwentRaw.length();
     unsigned long _index = 0;
-    unsigned long posTitle, posStrength, posAbiliity, posFraction, posType;
-    std::string strTitle, strStrength, strAbility, strFraction, strType;
+    unsigned long posTitle, posStrength, posAbiliity, posFaction, posType;
+    std::string strTitle, strStrength, strAbility, strFaction, strType;
     std::vector<std::string> vecCardRaw;
+    ICard* iTmp;
     while (_index < nLength)
     {
         posTitle = _index;
@@ -43,20 +44,23 @@ Deck CardLoader(std::string strFilename)
         strStrength = strGwentRaw.substr(posStrength + 1,
                                          posAbiliity - posStrength - 1);
         vecCardRaw.push_back(strStrength);
-        posFraction = strGwentRaw.find('\n', posAbiliity + 1);
+        posFaction = strGwentRaw.find('\n', posAbiliity + 1);
         strAbility = strGwentRaw.substr(posAbiliity + 1,
-                                        posFraction - posAbiliity - 1);
+                                        posFaction - posAbiliity - 1);
         vecCardRaw.push_back(strAbility);
-        posType = strGwentRaw.find('\n', posFraction + 1);
-        strFraction = strGwentRaw.substr(posFraction + 1,
-                                         posType - posFraction - 1);
-        vecCardRaw.push_back(strFraction);
+        posType = strGwentRaw.find('\n', posFaction + 1);
+        strFaction = strGwentRaw.substr(posFaction + 1,
+                                         posType - posFaction - 1);
+        vecCardRaw.push_back(strFaction);
         _index = strGwentRaw.find('\n', posType + 1);
         strType = strGwentRaw.substr(posType + 1,
                                      _index - posType - 1);
         vecCardRaw.push_back(strType);
-        
-        CardGen(vecCardRaw);
+        iTmp = CardGen(vecCardRaw);
+        if (iTmp)
+        {
+            deckFull.push_back(iTmp);
+        }
         vecCardRaw.clear();
         _index += 2;
     }
@@ -71,18 +75,16 @@ Deck CardLoader(std::string strFilename)
 //4 type
 ICard* CardGen(std::vector<std::string> &vecCardRaw)
 {
-    int nStrength = std::stoi(vecCardRaw[1]);
     int nType = std::stoi(vecCardRaw[4]);
     ICard* pCard = NULL;
-    if (nStrength >= 0)
+    if (nType < 3)
     {
-        pCard = new CUnitCard();
+        pCard = new CUnitCard(vecCardRaw);
     }
-    else
+    else if (nType > 3)
     {
-        pCard = new CSpecialCard();
+        pCard = new CSpecialCard(vecCardRaw);
     }
     return pCard;
-    
 }
 

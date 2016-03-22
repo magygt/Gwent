@@ -9,10 +9,7 @@
 #ifndef CardLoader_h
 #define CardLoader_h
 
-#include <iostream>
 #include <fstream>
-#include <string>
-#include <vector>
 #include "CUnitCard.h"
 #include "CSpecialCard.h"
 

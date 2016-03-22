@@ -7,14 +7,19 @@
 //
 
 #include <iostream>
-#include <fstream>
-#include <string>
 #include "CardLoader.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    CardLoader("./cards.data");
+    Deck deckFull = CardLoader("./cards.data");
+    //std::cout << deckFull.size() << std::endl;
+    for (std::vector<ICard*>::iterator iter = deckFull.begin();
+         iter != deckFull.end(); iter++)
+    {
+        std::cout << (*iter)->ToString() << std::endl;
+    }
     
+    std::cout << "finish" << std::endl;
     return 0;
 }
