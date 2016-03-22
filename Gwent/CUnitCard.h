@@ -10,7 +10,7 @@
 #define CUnitCard_h
 
 #include "ICard.h"
-#include <map>
+
 
 enum Tier
 {
@@ -52,14 +52,17 @@ public:
     CUnitCard();
     CUnitCard(std::vector<std::string> &vecCardRaw);
     ~CUnitCard();
-    void ToString();
+    std::string ToString();
     
-    static std::map<std::string, Faction> mapFaction;
     static std::vector<Tier> vecTier;
+    static std::map<std::string, Faction> mapFaction;
+    static std::map<std::string, Ability> mapAbility;
     
 private:
-    static std::map<std::string, Faction> CreateFactionMap();
-    static std::vector<Tier> CreateTierVec();
+    static std::vector<Tier> InitTierVec();
+    static std::map<std::string, Faction> InitFactionMap();
+    static std::map<std::string, Ability> InitAbilityMap();
+    void ExtractAbilities(std::string strAbility);
     
 private:
     Tier m_Tier;
