@@ -33,6 +33,7 @@ CUnitCard::CUnitCard(std::vector<std::string> &vecCardRaw)
     m_Strength = nStrength;
     m_Tier =vecTier[nType];
     m_Title = vecCardRaw[0];
+    ExtractAbilities(vecCardRaw[2]);
     m_Faction = mapFaction[vecCardRaw[3]];
 }
 
@@ -61,7 +62,7 @@ std::vector<Tier> CUnitCard::InitTierVec()
     return _vec;
 }
 
-std::map<std::string, Ability> InitAbilityMap()
+std::map<std::string, Ability> CUnitCard::InitAbilityMap()
 {
     std::map<std::string, Ability> _map;
     _map[std::string("null")] = NOBODY;
@@ -77,18 +78,33 @@ std::map<std::string, Ability> InitAbilityMap()
 
 void CUnitCard::ExtractAbilities(std::string strAbility)
 {
-//    std::vector<Ability> _vec;
-//    std::string strAbl;
-//    int nPos = 0;
-//    int nStart = 0;
-//    nPos = strAbility.find(nStart, ',');
-//    do
-//    {
-//        strAbi = strAbility.substr(nStart, nPos - nStart);
-//        nStart = nPos + 1;
-//        nPos = strAbility.find(nStart, ',');
-//    }
-//    while (nPos != -1);
+    std::vector<Ability> _vec;
+    std::vector<int> vecPos;
+    std::string strAbl;
+    for (int _index = 0; _index != strAbility.length(); _index++)
+    {
+        if (strAbility[_index] == ',')
+        {
+            vecPos.push_back(_index);
+        }
+    }
+    if (vecPos.size())
+    {
+        int nStart = 0;
+        for (int _index = 0; _index != vecPos.size(); _index++)
+        {
+            strAbl = strAbility.substr(nStart, vecPos[_index] - nStart);
+            _vec.push_back(mapAbility[strAbl]);
+            nStart = vecPos[_index] + 1;
+        }
+        strAbl = strAbility.substr(nStart, strAbility.length() + 1 - nStart);
+        _vec.push_back(mapAbility[strAbl]);
+    }
+    else
+    {
+        _vec.push_back(mapAbility[strAbility]);
+    }
+    m_Abilities = _vec;
 }
 
 std::string CUnitCard::ToString()
