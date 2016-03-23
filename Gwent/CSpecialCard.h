@@ -45,10 +45,14 @@ public:
     
     static std::map<std::string, Usage> mapUsage;
     static std::map<std::string, Weather> mapWeather;
+    static std::vector<std::string> vecUsageString;
+    static std::vector<std::string> vecWeatherString;
     
 private:
     static std::map<std::string, Usage> InitMapUsage();
     static std::map<std::string, Weather> InitMapWeather();
+    static std::vector<std::string> InitVecUsage();
+    static std::vector<std::string> InitVecWeather();
     
 private:
     Usage m_Usage;

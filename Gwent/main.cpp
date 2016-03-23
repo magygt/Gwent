@@ -20,6 +20,6 @@ int main(int argc, const char * argv[]) {
         std::cout << (*iter)->ToString() << std::endl;
     }
     
-    std::cout << "finish" << std::endl;
+    std::cout << deckFull.size() << " cards finish" << std::endl;
     return 0;
 }

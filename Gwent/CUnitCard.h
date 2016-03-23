@@ -58,10 +58,16 @@ public:
     static std::map<std::string, Faction> mapFaction;
     static std::map<std::string, Ability> mapAbility;
     
+    static std::vector<std::string> vecTierString;
+    static std::vector<std::string> vecFactionString;
+    static std::vector<std::string> vecAbilityString;
 private:
     static std::vector<Tier> InitTierVec();
     static std::map<std::string, Faction> InitFactionMap();
     static std::map<std::string, Ability> InitAbilityMap();
+    static std::vector<std::string> InitTierString();
+    static std::vector<std::string> InitFactionString();
+    static std::vector<std::string> InitAbilityString();
     void ExtractAbilities(std::string strAbility);
     
 private:

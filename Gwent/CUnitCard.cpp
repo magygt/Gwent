@@ -11,6 +11,9 @@
 std::vector<Tier> CUnitCard::vecTier = CUnitCard::InitTierVec();
 std::map<std::string, Faction> CUnitCard::mapFaction = CUnitCard::InitFactionMap();
 std::map<std::string, Ability> CUnitCard::mapAbility = CUnitCard::InitAbilityMap();
+std::vector<std::string> CUnitCard::vecTierString = CUnitCard::InitTierString();
+std::vector<std::string> CUnitCard::vecFactionString = CUnitCard::InitFactionString();
+std::vector<std::string> CUnitCard::vecAbilityString = CUnitCard::InitAbilityString();
 
 CUnitCard::CUnitCard()
 {
@@ -76,6 +79,40 @@ std::map<std::string, Ability> CUnitCard::InitAbilityMap()
     return _map;
 }
 
+std::vector<std::string> CUnitCard::InitTierString()
+{
+    std::vector<std::string> _vec;
+    _vec.push_back(std::string("close"));
+    _vec.push_back(std::string("ranged"));
+    _vec.push_back(std::string("siege"));
+    return _vec;
+}
+
+std::vector<std::string> CUnitCard::InitFactionString()
+{
+    std::vector<std::string> _vec;
+    _vec.push_back(std::string("neutral"));
+    _vec.push_back(std::string("nilfgaard"));
+    _vec.push_back(std::string("northern realms"));
+    _vec.push_back(std::string("monsters"));
+    _vec.push_back(std::string("scoiatael"));
+    return _vec;
+}
+
+std::vector<std::string> CUnitCard::InitAbilityString()
+{
+    std::vector<std::string> _vec;
+    _vec.push_back(std::string("nobody"));
+    _vec.push_back(std::string("agile"));
+    _vec.push_back(std::string("medic"));
+    _vec.push_back(std::string("morale boost"));
+    _vec.push_back(std::string("muster"));
+    _vec.push_back(std::string("tight bond"));
+    _vec.push_back(std::string("spy"));
+    _vec.push_back(std::string("hero"));
+    return _vec;
+}
+
 void CUnitCard::ExtractAbilities(std::string strAbility)
 {
     std::vector<Ability> _vec;
@@ -109,6 +146,19 @@ void CUnitCard::ExtractAbilities(std::string strAbility)
 
 std::string CUnitCard::ToString()
 {
-    std::string strCard = m_Title;
+    std::string strNewLine = "\n";
+    std::string strCard = m_Title + strNewLine;
+    strCard += vecFactionString[m_Faction] + strNewLine;
+    strCard += vecTierString[m_Tier] + strNewLine;
+    strCard += std::string("strength: ") + std::to_string(m_Strength) + strNewLine;
+    for (int _index = 0; _index != m_Abilities.size(); ++_index)
+    {
+        strCard += vecAbilityString[m_Abilities[_index]];
+        if (_index != m_Abilities.size() - 1)
+        {
+            strCard += std::string(", ");
+        }
+    }
+    strCard += strNewLine;
     return strCard;
 }

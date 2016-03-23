@@ -10,6 +10,8 @@
 
 std::map<std::string, Usage> CSpecialCard::mapUsage = CSpecialCard::InitMapUsage();
 std::map<std::string, Weather> CSpecialCard::mapWeather = CSpecialCard::InitMapWeather();
+std::vector<std::string> CSpecialCard::vecUsageString = CSpecialCard::InitVecUsage();
+std::vector<std::string> CSpecialCard::vecWeatherString = CSpecialCard::InitVecWeather();
 
 CSpecialCard::CSpecialCard()
             :m_Usage(USELESS),
@@ -44,7 +46,10 @@ CSpecialCard::~CSpecialCard()
 
 std::string CSpecialCard::ToString()
 {
-    std::string strCard = m_Title;
+    std::string strNewLine = "\n";
+    std::string strCard = m_Title + strNewLine;
+    strCard += vecUsageString[m_Usage] + strNewLine;
+    strCard += vecWeatherString[m_Weather] + strNewLine;
     return strCard;
 }
 
@@ -56,6 +61,7 @@ std::map<std::string, Usage> CSpecialCard::InitMapUsage()
     _map[std::string("Scorch")] = SCORCH;
     return _map;
 }
+
 std::map<std::string, Weather> CSpecialCard::InitMapWeather()
 {
     std::map<std::string, Weather> _map;
@@ -63,4 +69,25 @@ std::map<std::string, Weather> CSpecialCard::InitMapWeather()
     _map[std::string("Biting Frost")] = FROST;
     _map[std::string("Torrential Rain")] = RAIN;
     return _map;
+}
+
+std::vector<std::string> CSpecialCard::InitVecUsage()
+{
+    std::vector<std::string> _vec;
+    _vec.push_back(std::string("useless"));
+    _vec.push_back(std::string("horn"));
+    _vec.push_back(std::string("decoy"));
+    _vec.push_back(std::string("scorch"));
+    return _vec;
+}
+
+std::vector<std::string> CSpecialCard::InitVecWeather()
+{
+    std::vector<std::string> _vec;
+    _vec.push_back(std::string("empty"));
+    _vec.push_back(std::string("clear"));
+    _vec.push_back(std::string("frost"));
+    _vec.push_back(std::string("fog"));
+    _vec.push_back(std::string("rain"));
+    return _vec;
 }
