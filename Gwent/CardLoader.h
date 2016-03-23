@@ -13,6 +13,7 @@
 #include "CUnitCard.h"
 #include "CSpecialCard.h"
 
+//data file should have 2 extra new line at the end of file.
 std::string CardReader(std::string strFilename);
 
 Deck CardLoader(std::string strFilename);

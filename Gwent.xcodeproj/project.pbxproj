@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E5188F01CA2D64C004734DF /* TestCardLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5188EF1CA2D64C004734DF /* TestCardLoader.cpp */; };
+		5E5188F21CA2DD19004734DF /* testCards.data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5188F11CA2D7FB004734DF /* testCards.data */; };
+		5E5188F41CA2DD62004734DF /* testCards.data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E5188F11CA2D7FB004734DF /* testCards.data */; };
 		5E79CC511C8555EE00423188 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC501C8555EE00423188 /* main.cpp */; };
 		5E79CC5E1C855A3000423188 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79CC5D1C855A3000423188 /* main.cpp */; };
 		5E79CC631C85716600423188 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E79CC621C85716600423188 /* gtest.framework */; };
@@ -20,12 +23,21 @@
 		5E885C551C9E2F68000EE948 /* CPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E885C541C9E2F68000EE948 /* CPlayer.cpp */; };
 		5E885C561C9E2F68000EE948 /* CPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E885C541C9E2F68000EE948 /* CPlayer.cpp */; };
 		5E885C5A1C9E43B5000EE948 /* TestPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E885C591C9E43B5000EE948 /* TestPlayer.cpp */; };
-		5E885C621C9FDCA1000EE948 /* cards.data in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E885C5F1C9F99E5000EE948 /* cards.data */; };
 		5E885C651CA03371000EE948 /* CardLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E885C641CA03371000EE948 /* CardLoader.cpp */; };
 		5E885C661CA03371000EE948 /* CardLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E885C641CA03371000EE948 /* CardLoader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5E5188F31CA2DD57004734DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				5E5188F41CA2DD62004734DF /* testCards.data in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E79CC4B1C8555EE00423188 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,13 +62,15 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				5E885C621C9FDCA1000EE948 /* cards.data in CopyFiles */,
+				5E5188F21CA2DD19004734DF /* testCards.data in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E5188EF1CA2D64C004734DF /* TestCardLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestCardLoader.cpp; sourceTree = "<group>"; };
+		5E5188F11CA2D7FB004734DF /* testCards.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = testCards.data; path = Test/testCards.data; sourceTree = "<group>"; };
 		5E79CC4D1C8555EE00423188 /* Gwent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Gwent; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E79CC501C8555EE00423188 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5E79CC5B1C855A3000423188 /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +160,7 @@
 				5E79CC851C88772500423188 /* TestBattleField.h */,
 				5E885C591C9E43B5000EE948 /* TestPlayer.cpp */,
 				5E885C581C9E439A000EE948 /* TestPlayer.h */,
+				5E5188EF1CA2D64C004734DF /* TestCardLoader.cpp */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -153,6 +168,7 @@
 		5E885C5B1C9F9768000EE948 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				5E5188F11CA2D7FB004734DF /* testCards.data */,
 				5E885C5F1C9F99E5000EE948 /* cards.data */,
 			);
 			name = Resource;
@@ -186,6 +202,7 @@
 				5E79CC571C855A3000423188 /* Sources */,
 				5E79CC581C855A3000423188 /* Frameworks */,
 				5E79CC591C855A3000423188 /* CopyFiles */,
+				5E5188F31CA2DD57004734DF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -251,6 +268,7 @@
 			files = (
 				5E885C661CA03371000EE948 /* CardLoader.cpp in Sources */,
 				5E79CC761C87CC9400423188 /* CSpecialCard.cpp in Sources */,
+				5E5188F01CA2D64C004734DF /* TestCardLoader.cpp in Sources */,
 				5E79CC821C886FD600423188 /* CBattleField.cpp in Sources */,
 				5E79CC5E1C855A3000423188 /* main.cpp in Sources */,
 				5E885C5A1C9E43B5000EE948 /* TestPlayer.cpp in Sources */,

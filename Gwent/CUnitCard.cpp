@@ -49,9 +49,9 @@ std::map<std::string, Faction> CUnitCard::InitFactionMap()
 {
     std::map<std::string, Faction> _map;
     _map[std::string("netural")] = NEUTRAL;
-    _map[std::string("monster")] = MONSTERS;
+    _map[std::string("monsters")] = MONSTERS;
     _map[std::string("scoiatael")] = SCOIATAEL;
-    _map[std::string("nilfgaardian")] = NILFGAARD;
+    _map[std::string("nilfgaardian")] = NILFGAARDIAN;
     _map[std::string("northern")] = NORTHERN_REALMS;
     return _map;
 }
@@ -92,7 +92,7 @@ std::vector<std::string> CUnitCard::InitFactionString()
 {
     std::vector<std::string> _vec;
     _vec.push_back(std::string("neutral"));
-    _vec.push_back(std::string("nilfgaard"));
+    _vec.push_back(std::string("nilfgaardian"));
     _vec.push_back(std::string("northern realms"));
     _vec.push_back(std::string("monsters"));
     _vec.push_back(std::string("scoiatael"));

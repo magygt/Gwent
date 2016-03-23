@@ -16,7 +16,7 @@
 enum Faction
 {
     NEUTRAL,
-    NILFGAARD,
+    NILFGAARDIAN,
     NORTHERN_REALMS,
     MONSTERS,
     SCOIATAEL
