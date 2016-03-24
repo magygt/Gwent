@@ -1,0 +1,74 @@
+@startuml
+
+interface ICard{
+	{abstract} string ToString
+}
+
+class CUnitCard{
+    - string m_Title
+    - int m_Strength
+    - Tier m_Tier
+    - Faction m_Faction
+    - Abilities m_Abilities
+}
+
+class CSpecialCard{
+    - string m_Title
+    - Usage m_Usage
+    - int m_Strength
+    - Faction m_Faction
+    - Weather m_Weather
+}
+
+
+ICard <|-- CUnitCard
+ICard <|-- CSpecialCard
+
+class Leader{
+    - Faction m_Faction
+    - Trick m_Trick
+}
+
+interface IDeck{
+	{abstract} void EnDeck()
+}
+
+class CBattleField{
+    - bool m_OnWeather
+    - bool m_OnHorn
+	- int m_TotalStrength
+	- list<ICard*> m_Battlefield
+
+}
+
+class CCardDeck{
+	- list<ICard*> m_Battlefield
+}
+
+IDeck <|-- CBattleField
+IDeck <|-- CCardDeck
+
+class CPlayer{
+    - Leader m_Leader
+    - CBattleField m_Close
+    - CBattleField m_Ranged
+    - CBattleField m_Siege
+    - CCardDeck m_HandDeck
+    - CCardDeck m_DisCard
+    - CCardDeck m_DeckSet
+}
+
+
+
+class Gwent{
+    - CPlayer* m_Top
+    - CPlayer* m_Bottom
+    - bool m_Turn
+}
+
+class User{
+    - CPlayer* m_Player
+    - vector<CCardDeck> m_DeckSets
+}
+
+@enduml
