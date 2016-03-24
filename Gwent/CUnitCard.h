@@ -73,6 +73,9 @@ private:
 private:
     Tier m_Tier;
     int m_Strength;
+    Faction m_Faction;
+    CardGenre m_Genre;
+    std::string m_Title;
     std::vector<Ability> m_Abilities;    
 };
 

@@ -30,14 +30,11 @@ enum CardGenre
 
 class ICard
 {
+    
 public:
     virtual ~ICard(){}
     virtual std::string ToString() = 0;
     
-
-    std::string m_Title;
-    Faction m_Faction;
-    CardGenre m_Genre;
 };
 
 typedef std::vector<ICard*> Deck;

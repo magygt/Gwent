@@ -57,5 +57,8 @@ private:
 private:
     Usage m_Usage;
     Weather m_Weather;
+    Faction m_Faction;
+    CardGenre m_Genre;
+    std::string m_Title;
 };
 #endif /* CSpecialCard_h */
