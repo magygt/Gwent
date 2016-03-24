@@ -18,3 +18,10 @@ CPlayer::~CPlayer()
     delete m_Battlefield;
     m_Battlefield = NULL;
 }
+
+// 1 pop this card from handdeck
+// 2 push back to battlefield
+void CPlayer::OnBoard(ICard* card)
+{
+    
+}

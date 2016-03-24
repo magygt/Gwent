@@ -9,7 +9,7 @@
 #ifndef CSpecialCard_h
 #define CSpecialCard_h
 
-#include "ICard.h"
+#include "CBattleField.h"
 
 enum Usage
 {

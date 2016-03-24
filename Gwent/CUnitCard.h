@@ -9,8 +9,7 @@
 #ifndef CUnitCard_h
 #define CUnitCard_h
 
-#include "ICard.h"
-
+#include "CBattleField.h"
 
 enum Tier
 {
@@ -61,6 +60,7 @@ public:
     static std::vector<std::string> vecTierString;
     static std::vector<std::string> vecFactionString;
     static std::vector<std::string> vecAbilityString;
+    
 private:
     static std::vector<Tier> InitTierVec();
     static std::map<std::string, Faction> InitFactionMap();

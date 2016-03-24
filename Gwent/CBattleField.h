@@ -10,8 +10,6 @@
 #define CBattleField_h
 
 #include "ICard.h"
-#include "CUnitCard.h"
-#include "CSpecialCard.h"
 
 #ifndef TEST_FRIENDS
 #define TEST_FRIENDS
@@ -33,10 +31,7 @@ public:
     
 private:
     int m_TotalStrength;
-    
-    BattleRow m_CloseCombat;
-    BattleRow m_RangedCombat;
-    BattleRow m_SiegeCombat;
+    BattleRow m_BattleField[BATTLE_FIELD_RANGE];
     
     bool m_OnDouble[BATTLE_FIELD_RANGE];
     bool m_OnWeather[BATTLE_FIELD_RANGE];

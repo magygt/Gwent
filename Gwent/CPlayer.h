@@ -16,14 +16,17 @@ typedef std::vector<ICard> CardDeck;
 class CPlayer
 {
     TEST_FRIENDS
-private:
-    CBattleField* m_Battlefield;
-    CardDeck m_HandCard;
-    CardDeck m_Discard;
     
 public:
     CPlayer();
     ~CPlayer();
+    
+    void OnBoard(ICard* card);
+    
+private:
+    CBattleField* m_Battlefield;
+    HandCard m_HandCard;
+    Deck m_Discard;
     
 };
 

@@ -30,9 +30,7 @@ CBattleField::CBattleField()
 
 CBattleField::~CBattleField()
 {
-    CleanBattleField(m_CloseCombat);
-    CleanBattleField(m_RangedCombat);
-    CleanBattleField(m_SiegeCombat);
+
 }
 
 

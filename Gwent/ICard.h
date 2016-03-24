@@ -12,6 +12,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <list>
 
 enum Faction
 {
@@ -28,15 +29,18 @@ enum CardGenre
     SPECIAL
 };
 
+class CBattleField;
+
 class ICard
 {
     
 public:
     virtual ~ICard(){}
     virtual std::string ToString() = 0;
-    
+
 };
 
 typedef std::vector<ICard*> Deck;
+typedef std::list<ICard*> HandCard;
 
 #endif /* ICard_h */
