@@ -39,21 +39,21 @@ public:
 
 TEST_F(CTestCardLoader, CardLoaderWorks)
 {
-    Deck deckFull = CardLoader("./testCards.data");
-    size_t nDeckSize = deckFull.size();
+    CCardDeck deckFull = CardLoader("./testCards.data");
+    size_t nDeckSize = deckFull.Size();
     EXPECT_EQ(3, nDeckSize);
 }
 
 TEST_F(CTestCardLoader, UnitCardConstructorsOk)
 {
-    Deck deckFull = CardLoader("./testCards.data");
-    std::string strActualCard = deckFull[0]->ToString();
+    CCardDeck deckFull = CardLoader("./testCards.data");
+    std::string strActualCard = deckFull.At(0)->ToString();
     std::string strExpectCard = "Brutal Gordon\nnorthern realms\nranged\nstrength: 8\nhero\n";
     EXPECT_EQ(strExpectCard, strActualCard);
-    strActualCard = deckFull[1]->ToString();
+    strActualCard = deckFull.At(1)->ToString();
     strExpectCard = "Jerk Off Flurry\nmonsters\nclose\nstrength: 3\nspy\n";
     EXPECT_EQ(strExpectCard, strActualCard);
-    strActualCard = deckFull[2]->ToString();
+    strActualCard = deckFull.At(2)->ToString();
     strExpectCard = "Fag John\nnilfgaardian\nsiege\nstrength: 5\nmedic\n";
     EXPECT_EQ(strExpectCard, strActualCard);
 }

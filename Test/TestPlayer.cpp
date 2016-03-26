@@ -34,18 +34,17 @@ protected:
         
     }
     
-    CBattleField* GetBattleField()
+    std::vector<CBattleField*> GetBattleField()
     {
-        return m_Player.m_Battlefield;
+        return m_Player.m_VecBattleField;
     }
-    
 public:
     CPlayer m_Player;
 };
 
 TEST_F(CTestPlayer, ConstructorWorksOK)
 {
-    CBattleField* ptrBattleField = GetBattleField();
-    bool boolEqual = ptrBattleField == NULL;
-    EXPECT_FALSE(boolEqual);
+    std::vector<CBattleField*> battleField = GetBattleField();
+    EXPECT_EQ(BATTLE_FIELD_RANGE, battleField.size());
+    
 }

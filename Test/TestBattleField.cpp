@@ -35,19 +35,19 @@ protected:
         
     }
     
-    int GetTotalStrength()
+    bool GetOnHorn()
     {
-        return m_BattleField.m_TotalStrength;
+        return m_BattleField.m_OnHorn;
     }
     
-    bool* GetOnWeather()
+    bool GetOnWeather()
     {
         return m_BattleField.m_OnWeather;
     }
     
-    bool* GetOnDouble()
+    int GetTotalStrength()
     {
-        return m_BattleField.m_OnDouble;
+        return m_BattleField.m_TotalStrength;
     }
     
 public:
@@ -56,11 +56,5 @@ public:
 
 TEST_F(CTestBattleField, ConstructorWorksOK)
 {
-    int nStrength = GetTotalStrength();
-    EXPECT_EQ(0, nStrength);
-    for (int i = 0; i != BATTLE_FIELD_RANGE; ++i)
-    {
-        EXPECT_FALSE(GetOnDouble()[i]);
-        EXPECT_FALSE(GetOnWeather()[i]);
-    }
+    EXPECT_EQ(false, GetOnHorn());
 }
