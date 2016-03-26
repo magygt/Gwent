@@ -162,3 +162,8 @@ std::string CUnitCard::ToString()
     strCard += strNewLine;
     return strCard;
 }
+
+Faction CUnitCard::BelongsTo()
+{
+    return m_Faction;
+}

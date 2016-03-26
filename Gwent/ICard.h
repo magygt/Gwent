@@ -37,6 +37,7 @@ class ICard
 public:
     virtual ~ICard(){}
     virtual std::string ToString() = 0;
+    virtual Faction BelongsTo() = 0;
 
 };
 

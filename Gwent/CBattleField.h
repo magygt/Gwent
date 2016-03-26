@@ -9,7 +9,7 @@
 #ifndef CBattleField_h
 #define CBattleField_h
 
-#include "ICard.h"
+#include "IDeck.h"
 
 #ifndef TEST_FRIENDS
 #define TEST_FRIENDS
@@ -17,24 +17,20 @@
 
 #define BATTLE_FIELD_RANGE      (3)
 
-typedef std::vector<ICard*> BattleRow;
-
-void CleanBattleField(BattleRow& br);
-
-class CBattleField
+class CBattleField:
+    public IDeck
 {
     TEST_FRIENDS
-    friend void CleanBattleField(BattleRow& br);
 public:
     CBattleField();
     ~CBattleField();
+    void EnDeck(ICard* ptrCard);
     
 private:
+    bool m_OnHorn;
+    bool m_OnWeather;
     int m_TotalStrength;
-    BattleRow m_BattleField[BATTLE_FIELD_RANGE];
-    
-    bool m_OnDouble[BATTLE_FIELD_RANGE];
-    bool m_OnWeather[BATTLE_FIELD_RANGE];
+    std::list<ICard*> m_BattleField;
 };
 
 #endif /* CBattleField_h */

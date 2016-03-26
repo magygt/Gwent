@@ -61,9 +61,9 @@ class CPlayer{
 
 
 class Gwent{
-    - CPlayer* m_Top
-    - CPlayer* m_Bottom
-    - bool m_Turn
+    - PlayerPosition m_Turn
+    - int m_Score[PLAYER_NUM]k
+    - CPlayer* m_Player[PLAYER_NUM]
 }
 
 class User{

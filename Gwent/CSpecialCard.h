@@ -48,6 +48,8 @@ public:
     static std::vector<std::string> vecUsageString;
     static std::vector<std::string> vecWeatherString;
     
+    Faction BelongsTo();
+    
 private:
     static std::map<std::string, Usage> InitMapUsage();
     static std::map<std::string, Weather> InitMapWeather();

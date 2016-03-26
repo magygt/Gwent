@@ -91,3 +91,8 @@ std::vector<std::string> CSpecialCard::InitVecWeather()
     _vec.push_back(std::string("rain"));
     return _vec;
 }
+
+Faction CSpecialCard::BelongsTo()
+{
+    return m_Faction;
+}

@@ -9,9 +9,12 @@
 #ifndef CPlayer_h
 #define CPlayer_h
 
+#include "CUnitCard.h"
+#include "CSpecialCard.h"
+#include "CCardDeck.h"
 #include "CBattleField.h"
+#include "CLeader.h"
 
-typedef std::vector<ICard> CardDeck;
 
 class CPlayer
 {
@@ -21,14 +24,13 @@ public:
     CPlayer();
     ~CPlayer();
     
-    void OnBoard(ICard* card);
-    
 private:
-    CBattleField* m_Battlefield;
-    HandCard m_HandCard;
-    Deck m_Discard;
-    
+    //leader
+    CLeader m_Leader;
+    CCardDeck m_DeckSet;
+    CCardDeck m_Discard;
+    CCardDeck m_HandDeck;
+    std::vector<CBattleField*> m_VecBattleField;
 };
-
 
 #endif /* CPlayer_h */

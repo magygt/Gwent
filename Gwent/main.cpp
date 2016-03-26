@@ -12,14 +12,13 @@
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    Deck deckFull = CardLoader("./cards.data");
+    CCardDeck deckFull = CardLoader("./cards.data");
     //std::cout << deckFull.size() << std::endl;
-    for (std::vector<ICard*>::iterator iter = deckFull.begin();
-         iter != deckFull.end(); iter++)
+    std::vector<std::string> vecCard = deckFull.DeckTraverse();
+    for (std::vector<std::string>::iterator iter = vecCard.begin();
+         iter != vecCard.end(); iter++)
     {
-        std::cout << (*iter)->ToString() << std::endl;
+        std::cout << *iter << std::endl;
     }
-    
-    std::cout << deckFull.size() << " cards finish" << std::endl;
     return 0;
 }

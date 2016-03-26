@@ -61,6 +61,8 @@ public:
     static std::vector<std::string> vecFactionString;
     static std::vector<std::string> vecAbilityString;
     
+    Faction BelongsTo();
+    
 private:
     static std::vector<Tier> InitTierVec();
     static std::map<std::string, Faction> InitFactionMap();

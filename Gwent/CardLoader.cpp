@@ -21,7 +21,7 @@ std::string CardReader(std::string strFilename)
     return strGwentRaw;
 }
 
-Deck CardLoader(std::string strFilename)
+CCardDeck CardLoader(std::string strFilename)
 {
     Deck deckFull;
     std::string strGwentRaw = CardReader(strFilename);
@@ -32,6 +32,7 @@ Deck CardLoader(std::string strFilename)
     unsigned long posTitle, posStrength, posAbiliity, posFaction, posType;
     std::string strTitle, strStrength, strAbility, strFaction, strType;
     std::vector<std::string> vecCardRaw;
+    CCardDeck deck;
     ICard* iTmp;
     while (_index < nLength)
     {
@@ -59,12 +60,12 @@ Deck CardLoader(std::string strFilename)
         iTmp = CardGen(vecCardRaw);
         if (iTmp)
         {
-            deckFull.push_back(iTmp);
+            deck.EnDeck(iTmp);
         }
         vecCardRaw.clear();
         _index += 2;
     }
-    return deckFull;
+    return deck;
 }
 
 
