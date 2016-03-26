@@ -10,7 +10,6 @@
 #define CCardDeck_h
 
 #include "IDeck.h"
-#include <list>
 
 class CCardDeck
     :public IDeck
@@ -31,4 +30,5 @@ private:
     std::list<ICard*> m_CardDeck;
     
 };
+
 #endif /* CCardDeck_h */

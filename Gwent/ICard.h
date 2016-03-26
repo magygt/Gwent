@@ -9,25 +9,7 @@
 #ifndef ICard_h
 #define ICard_h
 
-#include <string>
-#include <vector>
-#include <map>
-#include <list>
-
-enum Faction
-{
-    NEUTRAL,
-    NILFGAARDIAN,
-    NORTHERN_REALMS,
-    MONSTERS,
-    SCOIATAEL
-};
-
-enum CardGenre
-{
-    UNIT,
-    SPECIAL
-};
+#include "GwentDef.h"
 
 class CBattleField;
 
@@ -40,8 +22,5 @@ public:
     virtual Faction BelongsTo() = 0;
 
 };
-
-typedef std::vector<ICard*> Deck;
-typedef std::list<ICard*> HandCard;
 
 #endif /* ICard_h */

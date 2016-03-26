@@ -15,8 +15,6 @@
 #define TEST_FRIENDS
 #endif
 
-#define BATTLE_FIELD_RANGE      (3)
-
 class CBattleField:
     public IDeck
 {

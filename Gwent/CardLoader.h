@@ -14,6 +14,8 @@
 #include "CUnitCard.h"
 #include "CSpecialCard.h"
 
+typedef std::vector<ICard*> Deck;
+
 //data file should have 2 extra new line at the end of file.
 std::string CardReader(std::string strFilename);
 

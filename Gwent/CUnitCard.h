@@ -11,14 +11,6 @@
 
 #include "CBattleField.h"
 
-enum Tier
-{
-    CLOSE,
-    RANGED,
-    SIEGE
-};
-
-
 //have thought of using mask
 enum Ability
 {
@@ -41,8 +33,6 @@ enum Ability
     //then draw two cards from your own deck
     HERO
 };
-
-
 
 class CUnitCard :
     public ICard

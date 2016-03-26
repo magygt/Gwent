@@ -11,7 +11,6 @@
 
 #include "CPlayer.h"
 
-#define PLAYER_NUM (2)
 
 enum PlayerPostion
 {

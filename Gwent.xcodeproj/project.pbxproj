@@ -102,6 +102,7 @@
 		5E7E9B4A1CA6273500E36524 /* CUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CUser.cpp; sourceTree = "<group>"; };
 		5E7E9B4D1CA6274C00E36524 /* CGwent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGwent.h; sourceTree = "<group>"; };
 		5E7E9B4E1CA6275C00E36524 /* CGwent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGwent.cpp; sourceTree = "<group>"; };
+		5E7E9B511CA636CB00E36524 /* GwentDef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GwentDef.h; sourceTree = "<group>"; };
 		5E885C541C9E2F68000EE948 /* CPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CPlayer.cpp; sourceTree = "<group>"; };
 		5E885C571C9E2F85000EE948 /* CPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPlayer.h; sourceTree = "<group>"; };
 		5E885C581C9E439A000EE948 /* TestPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPlayer.h; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 		5E79CC4F1C8555EE00423188 /* Gwent */ = {
 			isa = PBXGroup;
 			children = (
+				5E7E9B511CA636CB00E36524 /* GwentDef.h */,
 				5E79CC501C8555EE00423188 /* main.cpp */,
 				5E79CC6D1C873C5600423188 /* ICard.h */,
 				5E79CC711C873F7500423188 /* CUnitCard.h */,

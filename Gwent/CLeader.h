@@ -9,7 +9,7 @@
 #ifndef CLeader_h
 #define CLeader_h
 
-#include "ICard.h"
+#include "GwentDef.h"
 
 class CLeader{
     
