@@ -27,8 +27,9 @@ public:
     void SortByAbility();
     
 private:
-    std::list<ICard*> m_CardDeck;
+    std::list<ICard*> m_cardDeck;
     
 };
 
 #endif /* CCardDeck_h */
+

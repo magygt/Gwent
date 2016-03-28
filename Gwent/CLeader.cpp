@@ -17,3 +17,4 @@ CLeader::~CLeader()
 {
     
 }
+

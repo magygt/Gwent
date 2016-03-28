@@ -57,10 +57,12 @@ private:
     static std::vector<std::string> InitVecWeather();
     
 private:
-    Usage m_Usage;
-    Weather m_Weather;
-    Faction m_Faction;
-    CardGenre m_Genre;
-    std::string m_Title;
+    Usage m_usage;
+    Weather m_weather;
+    Faction m_faction;
+    CardGenre m_genre;
+    std::string m_title;
 };
+
 #endif /* CSpecialCard_h */
+

@@ -37,21 +37,21 @@ protected:
     
     bool GetOnHorn()
     {
-        return m_BattleField.m_OnHorn;
+        return m_battleField.m_onHorn;
     }
     
     bool GetOnWeather()
     {
-        return m_BattleField.m_OnWeather;
+        return m_battleField.m_onWeather;
     }
     
     int GetTotalStrength()
     {
-        return m_BattleField.m_TotalStrength;
+        return m_battleField.m_totalStrength;
     }
     
 public:
-    CBattleField m_BattleField;
+    CBattleField m_battleField;
 };
 
 TEST_F(CTestBattleField, ConstructorWorksOK)

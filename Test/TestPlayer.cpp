@@ -36,7 +36,7 @@ protected:
     
     std::vector<CBattleField*> GetBattleField()
     {
-        return m_Player.m_VecBattleField;
+        return m_Player.m_vecBattleField;
     }
 public:
     CPlayer m_Player;

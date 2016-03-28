@@ -9,9 +9,9 @@
 #include "CBattleField.h"
 
 CBattleField::CBattleField()
-    :m_OnHorn(false),
-     m_OnWeather(false),
-     m_TotalStrength(0)
+    :m_onHorn(false),
+     m_onWeather(false),
+     m_totalStrength(0)
 {
     
 }
@@ -25,6 +25,7 @@ void CBattleField::EnDeck(ICard *ptrCard)
 {
     if (ptrCard)
     {
-        m_BattleField.push_back(ptrCard);
+        m_battleField.push_back(ptrCard);
     }
 }
+

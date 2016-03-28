@@ -32,12 +32,12 @@ CUnitCard::CUnitCard(std::vector<std::string> &vecCardRaw)
     int nStrength = std::stoi(vecCardRaw[1]);
     int nType = std::stoi(vecCardRaw[4]);
     
-    m_Genre = UNIT;
-    m_Strength = nStrength;
-    m_Tier =vecTier[nType];
-    m_Title = vecCardRaw[0];
+    m_genre = UNIT;
+    m_strength = nStrength;
+    m_tier =vecTier[nType];
+    m_title = vecCardRaw[0];
     ExtractAbilities(vecCardRaw[2]);
-    m_Faction = mapFaction[vecCardRaw[3]];
+    m_faction = mapFaction[vecCardRaw[3]];
 }
 
 CUnitCard::~CUnitCard()
@@ -141,20 +141,20 @@ void CUnitCard::ExtractAbilities(std::string strAbility)
     {
         _vec.push_back(mapAbility[strAbility]);
     }
-    m_Abilities = _vec;
+    m_abilities = _vec;
 }
 
 std::string CUnitCard::ToString()
 {
     std::string strNewLine = "\n";
-    std::string strCard = m_Title + strNewLine;
-    strCard += vecFactionString[m_Faction] + strNewLine;
-    strCard += vecTierString[m_Tier] + strNewLine;
-    strCard += std::string("strength: ") + std::to_string(m_Strength) + strNewLine;
-    for (int _index = 0; _index != m_Abilities.size(); ++_index)
+    std::string strCard = m_title + strNewLine;
+    strCard += vecFactionString[m_faction] + strNewLine;
+    strCard += vecTierString[m_tier] + strNewLine;
+    strCard += std::string("strength: ") + std::to_string(m_strength) + strNewLine;
+    for (int _index = 0; _index != m_abilities.size(); ++_index)
     {
-        strCard += vecAbilityString[m_Abilities[_index]];
-        if (_index != m_Abilities.size() - 1)
+        strCard += vecAbilityString[m_abilities[_index]];
+        if (_index != m_abilities.size() - 1)
         {
             strCard += std::string(", ");
         }
@@ -165,5 +165,6 @@ std::string CUnitCard::ToString()
 
 Faction CUnitCard::BelongsTo()
 {
-    return m_Faction;
+    return m_faction;
 }
+

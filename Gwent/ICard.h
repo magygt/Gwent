@@ -24,3 +24,4 @@ public:
 };
 
 #endif /* ICard_h */
+

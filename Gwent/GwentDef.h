@@ -40,5 +40,5 @@ enum Tier
     SIEGE
 };
 
-
 #endif /* GwentDef_h */
+

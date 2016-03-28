@@ -25,9 +25,10 @@ public:
     ~CGwent();
     
 private:
-    PlayerPostion m_Turn;
-    int m_Score[PLAYER_NUM];
-    CPlayer* m_Player[PLAYER_NUM];
+    PlayerPostion m_turn;
+    int m_score[PLAYER_NUM];
+    CPlayer* m_player[PLAYER_NUM];
 };
 
 #endif /* CGwent_h */
+

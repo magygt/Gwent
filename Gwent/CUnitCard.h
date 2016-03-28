@@ -63,12 +63,12 @@ private:
     void ExtractAbilities(std::string strAbility);
     
 private:
-    Tier m_Tier;
-    int m_Strength;
-    Faction m_Faction;
-    CardGenre m_Genre;
-    std::string m_Title;
-    std::vector<Ability> m_Abilities;    
+    Tier m_tier;
+    int m_strength;
+    Faction m_faction;
+    CardGenre m_genre;
+    std::string m_title;
+    std::vector<Ability> m_abilities;    
 };
 
 #endif /* CUnitCard_h */

@@ -18,9 +18,10 @@ public:
     ~CLeader();
     
 private:
-    std::string m_Title;
-    Faction m_Faction;
+    std::string m_title;
+    Faction m_faction;
     //trick
 };
 
 #endif /* CLeader_h */
+

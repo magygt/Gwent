@@ -24,3 +24,4 @@ CCardDeck CardLoader(std::string strFilename);
 ICard* CardGen(std::vector<std::string> &vecCardRaw);
 
 #endif /* CardLoader_h */
+

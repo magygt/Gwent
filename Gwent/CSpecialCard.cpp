@@ -14,8 +14,8 @@ std::vector<std::string> CSpecialCard::vecUsageString = CSpecialCard::InitVecUsa
 std::vector<std::string> CSpecialCard::vecWeatherString = CSpecialCard::InitVecWeather();
 
 CSpecialCard::CSpecialCard()
-            :m_Usage(USELESS),
-             m_Weather(EMPTY)
+            :m_usage(USELESS),
+             m_weather(EMPTY)
 {
 
 }
@@ -25,18 +25,18 @@ CSpecialCard::CSpecialCard(std::vector<std::string> &vecCardRaw)
     int nType = std::stoi(vecCardRaw[4]);
     if (nType == 4)
     {
-        m_Usage = mapUsage[vecCardRaw[0]];
-        m_Weather = EMPTY;
+        m_usage = mapUsage[vecCardRaw[0]];
+        m_weather = EMPTY;
     }
     else
     {
-        m_Usage = USELESS;
-        m_Weather = mapWeather[vecCardRaw[0]];
+        m_usage = USELESS;
+        m_weather = mapWeather[vecCardRaw[0]];
     }
     
-    m_Genre = SPECIAL;
-    m_Faction = NEUTRAL;
-    m_Title = vecCardRaw[0];
+    m_genre = SPECIAL;
+    m_faction = NEUTRAL;
+    m_title = vecCardRaw[0];
 }
 
 CSpecialCard::~CSpecialCard()
@@ -47,9 +47,9 @@ CSpecialCard::~CSpecialCard()
 std::string CSpecialCard::ToString()
 {
     std::string strNewLine = "\n";
-    std::string strCard = m_Title + strNewLine;
-    strCard += vecUsageString[m_Usage] + strNewLine;
-    strCard += vecWeatherString[m_Weather] + strNewLine;
+    std::string strCard = m_title + strNewLine;
+    strCard += vecUsageString[m_usage] + strNewLine;
+    strCard += vecWeatherString[m_weather] + strNewLine;
     return strCard;
 }
 
@@ -94,5 +94,6 @@ std::vector<std::string> CSpecialCard::InitVecWeather()
 
 Faction CSpecialCard::BelongsTo()
 {
-    return m_Faction;
+    return m_faction;
 }
+

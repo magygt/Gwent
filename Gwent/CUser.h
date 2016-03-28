@@ -23,3 +23,4 @@ private:
 };
 
 #endif /* CUser_h */
+

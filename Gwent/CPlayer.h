@@ -26,11 +26,12 @@ public:
     
 private:
     //leader
-    CLeader m_Leader;
-    CCardDeck m_DeckSet;
-    CCardDeck m_Discard;
-    CCardDeck m_HandDeck;
-    std::vector<CBattleField*> m_VecBattleField;
+    CLeader m_leader;
+    CCardDeck m_deckSet;
+    CCardDeck m_discard;
+    CCardDeck m_handDeck;
+    std::vector<CBattleField*> m_vecBattleField;
 };
 
 #endif /* CPlayer_h */
+
