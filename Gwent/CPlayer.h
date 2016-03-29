@@ -34,4 +34,3 @@ private:
 };
 
 #endif /* CPlayer_h */
-
