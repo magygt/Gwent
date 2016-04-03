@@ -9,7 +9,8 @@
 #ifndef CUnitCard_h
 #define CUnitCard_h
 
-#include "CBattleField.h"
+#include "ICard.h"
+
 
 //have thought of using mask
 enum Ability
@@ -52,6 +53,9 @@ public:
     static std::vector<std::string> vecAbilityString;
     
     Faction BelongsTo();
+    
+    int GetStrength() const;
+    Tier GetTier() const;
     
 private:
     static std::vector<Tier> InitTierVec();

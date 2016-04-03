@@ -15,7 +15,13 @@ CCardDeck::CCardDeck()
 
 CCardDeck::~CCardDeck()
 {
-    
+    for (std::list<ICard*>::iterator iter = m_cardDeck.begin();
+         iter != m_cardDeck.end(); ++iter)
+    {
+        delete *iter;
+        *iter = NULL;
+    }
+    m_cardDeck.clear();
 }
 
 void CCardDeck::EnDeck(ICard* ptrCard)

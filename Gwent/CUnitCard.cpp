@@ -168,3 +168,12 @@ Faction CUnitCard::BelongsTo()
     return m_faction;
 }
 
+int CUnitCard::GetStrength() const
+{
+    return m_strength;
+}
+
+Tier CUnitCard::GetTier() const
+{
+    return m_tier;
+}
