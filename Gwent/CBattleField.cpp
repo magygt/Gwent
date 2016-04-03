@@ -9,11 +9,15 @@
 #include "CBattleField.h"
 
 CBattleField::CBattleField()
-    :m_onHorn(false),
-     m_onWeather(false),
-     m_totalStrength(0)
+    :m_totalStrength(0)
 {
-    
+    std::list<ICard*> listCard;
+    for (int _row = 0; _row != BATTLE_FIELD_RANGE; _row++)
+    {
+        m_onHorn[_row] = false;
+        m_onWeather[_row] = false;
+        m_vecBattleField.push_back(listCard);
+    }
 }
 
 CBattleField::~CBattleField()
@@ -23,9 +27,5 @@ CBattleField::~CBattleField()
 
 void CBattleField::EnDeck(ICard *ptrCard)
 {
-    if (ptrCard)
-    {
-        m_battleField.push_back(ptrCard);
-    }
 }
 

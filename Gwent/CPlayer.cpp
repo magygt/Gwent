@@ -10,12 +10,7 @@
 
 CPlayer::CPlayer()
 {
-    CBattleField* pBattleField = NULL;
-    for (int i = 0; i != BATTLE_FIELD_RANGE; i++) {
-        pBattleField = new CBattleField;
-        m_vecBattleField.push_back(pBattleField);
-        pBattleField = NULL;
-    }
+    m_pBattleField = new CBattleField;
 }
 
 CPlayer::~CPlayer()

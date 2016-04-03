@@ -30,7 +30,7 @@ private:
     CCardDeck m_deckSet;
     CCardDeck m_discard;
     CCardDeck m_handDeck;
-    std::vector<CBattleField*> m_vecBattleField;
+    CBattleField* m_pBattleField;
 };
 
 #endif /* CPlayer_h */

@@ -34,9 +34,9 @@ protected:
         
     }
     
-    std::vector<CBattleField*> GetBattleField()
+    std::vector<std::list<ICard*>> GetBattleField()
     {
-        return m_Player.m_vecBattleField;
+        return m_Player.m_pBattleField->m_vecBattleField;
     }
 public:
     CPlayer m_Player;
@@ -44,7 +44,7 @@ public:
 
 TEST_F(CTestPlayer, ConstructorWorksOK)
 {
-    std::vector<CBattleField*> battleField = GetBattleField();
+    std::vector<std::list<ICard*>> battleField = GetBattleField();
     EXPECT_EQ(BATTLE_FIELD_RANGE, battleField.size());
     
 }

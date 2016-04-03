@@ -25,10 +25,10 @@ public:
     void EnDeck(ICard* ptrCard);
     
 private:
-    bool m_onHorn;
-    bool m_onWeather;
+    bool m_onHorn[BATTLE_FIELD_RANGE];
+    bool m_onWeather[BATTLE_FIELD_RANGE];
     int m_totalStrength;
-    std::list<ICard*> m_battleField;
+    std::vector<std::list<ICard*>> m_vecBattleField;
 };
 
 #endif /* CBattleField_h */

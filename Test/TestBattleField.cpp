@@ -35,12 +35,12 @@ protected:
         
     }
     
-    bool GetOnHorn()
+    bool* GetOnHorn()
     {
         return m_battleField.m_onHorn;
     }
     
-    bool GetOnWeather()
+    bool* GetOnWeather()
     {
         return m_battleField.m_onWeather;
     }
@@ -56,5 +56,11 @@ public:
 
 TEST_F(CTestBattleField, ConstructorWorksOK)
 {
-    EXPECT_EQ(false, GetOnHorn());
+    bool* bWeather = GetOnWeather();
+    bool* bHorn = GetOnHorn();
+    for (int _row = 0; _row != BATTLE_FIELD_RANGE; ++_row)
+    {
+        EXPECT_FALSE(bWeather[_row]);
+        EXPECT_FALSE(bHorn[_row]);
+    }
 }

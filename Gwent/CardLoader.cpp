@@ -13,7 +13,7 @@ std::string CardReader(std::string strFilename)
     std::ifstream ifsCardFile(strFilename);
     if (ifsCardFile.fail())
     {
-        return NULL;
+        return std::string("");
     }
     std::string strGwentRaw( (std::istreambuf_iterator<char>(ifsCardFile)),
                             (std::istreambuf_iterator<char>()) );
